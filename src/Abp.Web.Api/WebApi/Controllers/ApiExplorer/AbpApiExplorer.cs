@@ -83,7 +83,7 @@ namespace Abp.WebApi.Controllers.ApiExplorer
 
                     SetResponseDescription(apiDescription, actionDescriptor);
 
-                    apiDescription.RelativePath = "api/services/" + dynamicApiControllerInfo.ServiceName + "/" + dynamicApiActionInfo.ActionName;
+                    apiDescription.RelativePath =  dynamicApiControllerInfo.ServiceName + "/" + dynamicApiActionInfo.ActionName;
 
                     apiDescriptions.Add(apiDescription);
                 }

@@ -262,7 +262,7 @@ namespace Abp.AspNetCore.Mvc.Conventions
         {
             return new AttributeRouteModel(
                 new RouteAttribute(
-                    $"api/services/{moduleName}/{controllerName}/{action.ActionName}"
+                    $"{moduleName}/{controllerName}/{action.ActionName}"
                 )
             );
         }

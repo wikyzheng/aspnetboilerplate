@@ -10,7 +10,7 @@ namespace Abp.WebApi.Controllers.Dynamic.Scripting
     {
         public static string GenerateUrlWithParameters(DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo actionInfo)
         {
-            var baseUrl = "api/services/" + controllerInfo.ServiceName + "/" + actionInfo.ActionName;
+            var baseUrl =  controllerInfo.ServiceName + "/" + actionInfo.ActionName;
 
             var primitiveParameters = actionInfo.Method
                 .GetParameters()

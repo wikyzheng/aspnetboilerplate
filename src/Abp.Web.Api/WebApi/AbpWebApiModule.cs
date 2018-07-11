@@ -125,7 +125,7 @@ namespace Abp.WebApi
 
             httpConfiguration.Routes.MapHttpRoute(
                 name: "AbpDynamicWebApi",
-                routeTemplate: "api/services/{*serviceNameWithAction}"
+                routeTemplate: "{*serviceNameWithAction}"
                 );
 
             //Other routes

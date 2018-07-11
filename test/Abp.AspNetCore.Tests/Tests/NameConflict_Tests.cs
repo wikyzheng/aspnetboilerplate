@@ -33,7 +33,7 @@ namespace Abp.AspNetCore.Tests
             );
 
             //Assert
-            response.Result.ShouldBe("/api/services/app/NameConflict/GetConstantString");
+            response.Result.ShouldBe("/app/NameConflict/GetConstantString");
         }
 
         [Fact]
@@ -41,7 +41,7 @@ namespace Abp.AspNetCore.Tests
         {
             // Act
             var response = await GetResponseAsObjectAsync<AjaxResponse<string>>(
-                "/api/services/app/NameConflict/GetConstantString"
+                "/app/NameConflict/GetConstantString"
             );
 
             //Assert
